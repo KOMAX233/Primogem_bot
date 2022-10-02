@@ -23,8 +23,10 @@ async def on_message(message):
   if message.content.startswith('还有什么'):
     await message.channel.send('没了!')
 
-  if message.content.startswith('这么好笑') or message.content.startswith(
-      '<:grass:1025233778949492806>'):
+  if message.content.startswith('这么好笑'):
+    await message.channel.send('<:grass:1025233778949492806>')
+
+  if message.content.find('<:grass:1025233778949492806>') != -1:
     await message.channel.send('<:grass:1025233778949492806>')
 
 
