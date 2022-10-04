@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.python39Packages.pipx
     pkgs.python38Full
   ];
   env = {
